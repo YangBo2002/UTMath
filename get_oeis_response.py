@@ -6,26 +6,26 @@ from utils.construct_aseq_prompt import make_aseq_prompt
 from models.openai_gpt import OpenAIModel
 from data_collection.category_cluster import ASeqFactory
 
-problem_path = r'data\oeis_problem.jsonl'
-save_path = r'data\sample_example\gpt-4o_test.jsonl'
+problem_path = r'data/oeis_problem.jsonl'
+save_path = r'data/sample_example/gpt-4o_test.jsonl'
 
 seq_db = ASeqFactory(problem_path)
 
-def RCoT(seq_db, item, model_name):
-    prompt_first = make_aseq_prompt(seq_db, item['oeis_id'], 1)
-    prompt_second = make_aseq_prompt(seq_db, item['oeis_id'], 2)
+def RCoT(sequence, model_name):
+    prompt_reasoning = make_aseq_prompt(sequence, turn=1)
+    prompt_coding = make_aseq_prompt(sequence, turn=2)
 
     first_llm = OpenAIModel(model_name)
     second_llm = OpenAIModel(model_name)
     
-    msgs = [{'role': 'user', 'content': prompt_first}]
-    content, input_tokens_first, output_tokens_first = first_llm.call(msgs)
+    msgs = [{'role': 'user', 'content': prompt_reasoning}]
+    content, _, _ = first_llm.call(msgs)
     msgs.append({'role': 'assistant', 'content': content})
-    msgs.append({'role': 'user', 'content': prompt_second})
-    content, input_tokens_second, output_tokens_second = second_llm.call(msgs)
+    msgs.append({'role': 'user', 'content': prompt_coding})
+    content, _, _ = second_llm.call(msgs)
     msgs.append({'role': 'assistant', 'content': content})
     
-    return msgs, input_tokens_first, output_tokens_first, input_tokens_second, output_tokens_second
+    return msgs
 
 
 

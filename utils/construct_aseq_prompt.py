@@ -1,4 +1,3 @@
-from data_collection.category_cluster import ASeqFactory
 prompt_first = """Please analyze the following sequence problem and provide a detailed reasoning process for the sequence. You need to follow these requirements:
 
 Use the solution with the lowest time complexity.
@@ -34,14 +33,12 @@ solution({x3}) == {y3}
 #Test time limit:1s
 # 时间限制：1s
 
-def make_aseq_prompt(seq_db, aid, flag):
-    seq_d = seq_db.get_or_download_a_seq(aid)
-    # xst = int(seq_d['offset'].split(',')[0])
-    x1, x2, x3 = seq_d['x_list'][0],seq_d['x_list'][1],seq_d['x_list'][2]
-    y1, y2, y3 = seq_d['y_list'][0],seq_d['y_list'][1],seq_d['y_list'][2]
-    if flag == 1:
+def make_aseq_prompt(sequence, turn):
+    x1, x2, x3 = sequence['x_list'][0],sequence['x_list'][1],sequence['x_list'][2]
+    y1, y2, y3 = sequence['y_list'][0],sequence['y_list'][1],sequence['y_list'][2]
+    if turn == 1:
         prompt = prompt_first.format(
-            problem=seq_d['problem_statement'],
+            problem=sequence['problem_statement'],
             x1=x1, x2=x2, x3=x3,
             y1=y1, y2=y2, y3=y3,
         )
@@ -54,7 +51,9 @@ def make_aseq_prompt(seq_db, aid, flag):
 
 if __name__ == '__main__':
     import sys
+    from data_collection.category_cluster import ASeqFactory
     aid = sys.argv[1]
-    a_seq_path = r'data\oeis_problem.jsonl'
+    a_seq_path = r'data/oeis_problem.jsonl'
     seq_db = ASeqFactory(a_seq_path)
-    print(make_aseq_prompt(seq_db, aid))
+    sequence = seq_db.get_or_download_a_seq(aid)
+    print(make_aseq_prompt(sequence))
