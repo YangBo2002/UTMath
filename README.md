@@ -22,3 +22,7 @@ python utmath_eval/oeis_evaluator.py  --problem_file=data/utmath_problem.jsonl -
 # --with_extra_data=True represents testing both easy and hard cases
 # --with_extra_data=None represents testing only easy cases
 ```
+
+# Acknowledgement
+
+A large part of the codes are borrowed from [HumanEval](https://github.com/openai/human-eval)
