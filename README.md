@@ -30,7 +30,7 @@ In `data/oeis_problem.jsonl`, you'll find all 1053 problems from the UTMath benc
 We conducted a comprehensive study with 8 LLMs. Some of our key findings are summarized as follows:
 - The best model, GPT-4o, only solves 26.93\% problem in our benchmark, demonstrate the difficulty of our benchmarks.
 - Modern LLMs perform poorly in Graph Theory, Group Theory, Geometry and Topology.
-![performance on different problemd categories](./pic/performance_on_different_problems_categoris.png)
+![performance on different problemd categories](./pic/performance_on_different_problems_categories.png)
 
 - With RCoT, 7 of 8 evaluated LLMs generated more efficient solutions, with most models achieving higher scores.
 - RCoT can significantly improve the pass@k performance of LLMs. 
