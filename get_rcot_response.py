@@ -15,7 +15,6 @@ def RCoT(sequence, first_llm, second_llm, save_path):
     prompt_reasoning = make_aseq_prompt(sequence, turn=1)
     prompt_coding = make_aseq_prompt(sequence, turn=2)
 
-    
     msgs = [{'role': 'user', 'content': prompt_reasoning}]
     content, input_tokens_first, output_tokens_first = first_llm.call(msgs)
     msgs.append({'role': 'assistant', 'content': content})
