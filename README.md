@@ -17,27 +17,27 @@
 
 *The Reasoning-to-Coding of Thoughts (RCoT) approach complements the UTMath Benchmark by encouraging LLMs to engage in explicit reasoning prior to generating code. This approach fosters the development of more sophisticated and logically coherent solutions, leading to improved overall performance in mathematical problem-solving.*
 
-![overview](arxiv_submit\UTMath\pic\overview.png)
+![overview](./pic/overview.png)
 
 In `data/oeis_problem.jsonl`, you'll find all 1053 problems from the UTMath benchmark, covering 9 mathematical domains. Each problem includes over 68 test cases.
 
 ## 🥇 Leaderboard
 *Here, we consider the closed-source models, i.e., GPT-3.5-Turbo/GPT-4o from OpenAI, Claude-3.5-Sonnet, Gemini-1.5-Pro, as well as the open-source models, i.e., LLaMA-3.1, Qwen2.5, Qwen2.5-Math, DeepSeek-V2.5. The metric pass@1 is calculated as the average result over 5 run times. We run all evaluations in a laptop with CPU Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz.*
 
-![Leaderboard](arxiv_submit\UTMath\pic\leaderboard.png)
+![Leaderboard](./pic/leaderboard.png)
 
 ## 😎 Some interesting findings
 We conducted a comprehensive study with 8 LLMs. Some of our key findings are summarized as follows:
 - The best model, GPT-4o, only solves 26.93\% problem in our benchmark, demonstrate the difficulty of our benchmarks.
 - Modern LLMs perform poorly in Graph Theory, Group Theory, Geometry and Topology.
-![performance on different problem categories](arxiv_submit\UTMath\pic\performance_on_different_problems_categoris.png)
+![performance on different problemd categories](./pic/performance_on_different_problems_categoris.png)
 
 - With RCoT, 7 of 8 evaluated LLMs generated more efficient solutions, with most models achieving higher scores.
 - RCoT can significantly improve the pass@k performance of LLMs. 
-![pass@k](arxiv_submit\UTMath\pic\pass_k.png)
+![pass@k](./pic/pass_k.png)
 
 - The quality of reasoning significantly impacts the accuracy and efficiency of the model's final solution.
-![self-reasoning](arxiv_submit\UTMath\pic\self-reasoning.png)![self-reasoning](arxiv_submit\UTMath\pic\self-reasoning.png)
+![self-reasoning](./pic/self-reasoning.png)
 
 We hope our findings contribute to a deeper understanding of current reasoning ability of LLMs and the further development of models.
 
