@@ -13,7 +13,9 @@
 
 
 ## 📄 UTMath
-*UTMath is a rigorous and expansive benchmark designed to evaluate the mathematical reasoning abilities of Large Language Models (LLMs). Based on sequences and inspired by the Online Encyclopedia of Integer Sequences ([OEIS](https://oeis.org/wiki/Welcome)), UTMath encompasses a diverse set of 1,053 problems across 9 distinct mathematical domains. This provides a comprehensive assessment of LLMs' capabilities. With over 68 test cases per problem, UTMath ensures a thorough evaluation, emphasizing both the accuracy and reliability of the results. Drawing from unit testing methodologies in software development, UTMath’s innovative framework enables a detailed analysis of how well LLMs adapt and reason across a broad range of mathematical topics.*
+*UTMath: Math Evaluation with **Unit Test** via Reasoning-to-Coding Thoughts*
+
+*UTMath is a rigorous and expansive benchmark designed to evaluate the mathematical reasoning abilities of Large Language Models (LLMs), with an average of 68 test cases per problem to ensure that the model **truly solves the problem** rather than simply memorizing the answers. Based on sequences and inspired by the Online Encyclopedia of Integer Sequences ([OEIS](https://oeis.org/wiki/Welcome)), UTMath encompasses a diverse set of 1,053 problems across 9 distinct mathematical domains. This provides a comprehensive assessment of LLMs' capabilities. Drawing from unit testing methodologies in software development, UTMath’s innovative framework enables a detailed analysis of how well LLMs adapt and reason across a broad range of mathematical topics.*
 
 *The Reasoning-to-Coding of Thoughts (RCoT) approach complements the UTMath Benchmark by encouraging LLMs to engage in explicit reasoning prior to generating code. This approach fosters the development of more sophisticated and logically coherent solutions, leading to improved overall performance in mathematical problem-solving.*
 
