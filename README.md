@@ -88,8 +88,7 @@ We conducted a comprehensive study with 8 LLMs. Some of our key findings are sum
 ![performance on different problemd categories](./pic/performance_on_different_problems_categories.png)
 Performance on Different Problem Categories.(%) Categories are represented by abbreviations. NT: Number Theory; T.: Theory; DM: Discrete Mathematics; CM: Combinatorial Mathematics; GT: Geometry and Topology; PSE: Polynomial and Series Expansions; SN: Special Numbers; FL: Formal Languages.
 
-- With RCoT, 7 of 8 evaluated LLMs generated more efficient solutions, with most models achieving higher scores.
-- RCoT can significantly improve the pass@k performance of LLMs. 
+- RCoT can significantly improve the pass@k performance of LLMs. With RCoT, 7 of 8 evaluated LLMs generated more efficient solutions, with most models achieving higher scores.
 ![pass@k](./pic/pass_k.png)
 Performance comparison of models across PoT and RCoT tasks at different pass@k levels.
 
