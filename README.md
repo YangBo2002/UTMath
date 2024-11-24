@@ -36,7 +36,7 @@
 
 ![overview](./pic/overview.png)
 
-In `data/oeis_problem.jsonl`, you'll find all 1053 problems from the UTMath benchmark, covering 9 mathematical domains. Each problem includes over 68 test cases.
+In `data/utmath_problem.jsonl`, you'll find all 1053 problems from the UTMath benchmark, covering 9 mathematical domains. Each problem includes over 68 test cases.
 
 ## 📊 Evaluating on UTMath
 
