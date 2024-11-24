@@ -79,19 +79,23 @@ If you find our work interesting and meaningful, welcome to give a 🌟 to our r
 - The best model, GPT-4o, only solves 26.93\% problem in our benchmark, demonstrate the difficulty of our benchmarks.
 
 ![Leaderboard](./pic/leaderboard.png)
+Pass Rate and Average Run Time of LLMs on UTMath. We listed the performance of eight large models using PoT(Program of Thoughts) and RCoT methods across a range of metrics. The average run time is calculated based on the problems solved by the PoT or RCoT methods. The efficiency is calculated as: (Avg.Runtime(PoT) - Avg.Runtime(RcoT)) / Avg.Runtime(RcoT).
 
 ## 😎 Some interesting findings
 We conducted a comprehensive study with 8 LLMs. Some of our key findings are summarized as follows:
 
 - Modern LLMs perform poorly in Graph Theory, Group Theory, Geometry and Topology.
 ![performance on different problemd categories](./pic/performance_on_different_problems_categories.png)
+Performance on Different Problem Categories.(%) Categories are represented by abbreviations. NT: Number Theory; T.: Theory; DM: Discrete Mathematics; CM: Combinatorial Mathematics; GT: Geometry and Topology; PSE: Polynomial and Series Expansions; SN: Special Numbers; FL: Formal Languages.
 
 - With RCoT, 7 of 8 evaluated LLMs generated more efficient solutions, with most models achieving higher scores.
 - RCoT can significantly improve the pass@k performance of LLMs. 
 ![pass@k](./pic/pass_k.png)
+Performance comparison of models across PoT and RCoT tasks at different pass@k levels.
 
 - The quality of reasoning significantly impacts the accuracy and efficiency of the model's final solution.
 ![self-reasoning](./pic/self-reasoning.png)
+Performance comparison between self-reasoning and using GPT-4o reasoning for coding across different models. The results show that models perform better when relying on GPT-4o's reasoning output.
 
 We hope our findings contribute to a deeper understanding of current reasoning ability of LLMs and the further development of models.
 
