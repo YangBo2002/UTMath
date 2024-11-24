@@ -67,14 +67,11 @@ python get_rcot_response.py --problem_path=data/utmath_problem.jsonl --save_path
 ## 💬 Citation
 If you find our work interesting and meaningful, welcome to give a 🌟 to our repo and cite our paper.
 ```
-@misc{yang2024utmathmathevaluationunit,
-      title={UTMath: Math Evaluation with Unit Test via Reasoning-to-Coding Thoughts}, 
-      author={Bo Yang and Qingping Yang and Runtao Liu},
-      year={2024},
-      eprint={2411.07240},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2411.07240}, 
+@article{yang2024utmath,
+  title={UTMath: Math Evaluation with Unit Test via Reasoning-to-Coding Thoughts},
+  author={Yang, Bo and Yang, Qingping and Liu, Runtao},
+  journal={arXiv preprint arXiv:2411.07240},
+  year={2024}
 }
 ```
 
