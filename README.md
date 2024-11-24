@@ -12,7 +12,7 @@
     <a href="https://huggingface.co/datasets/UTMath/UTMath_Train">
         <img alt="Static Badge" src="https://img.shields.io/badge/🤗HFDataset UTMath_Train-yellow">
     </a>
-    <a href="https://huggingface.co/datasets/UTMath/UTMath_Train">
+    <a href="https://utmathhomepage.github.io/">
         <img alt="Static Badge" src="https://img.shields.io/badge/🚀Home Page-blue">
     </a> 
 </p>
