@@ -70,7 +70,3 @@ We hope our findings contribute to a deeper understanding of current reasoning a
 
 ## 👀 Furthermore
 *Additionally, we are releasing not only the UTMath benchmark but also the UTMath-Train dataset, consisting of over 70,000 problem-solving samples. This dataset is designed to support the community in further advancing research on mathematical reasoning and improving LLM performance in this domain.*
-
-# 🥰 Acknowledgement
-- We sincerely thank the [OEIS](https://oeis.org/wiki/Welcome) for its tireless efforts and contributions to the advancement of mathematics and computer science.
-- We are also grateful to [HumanEval](https://github.com/openai/human-eval) for providing valuable code resources. 
