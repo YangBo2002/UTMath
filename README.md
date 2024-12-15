@@ -1,23 +1,3 @@
-
-<p align="center">
-    <a href="https://arxiv.org/abs/2411.07240">
-        <img alt="Static Badge" src="https://img.shields.io/badge/📃Paper ArXiv-red">
-    </a>
-    <a href="https://github.com/UTMathGroup/UTMath">
-        <img alt="Static Badge" src="https://img.shields.io/badge/😺GitHub UTMath-darkgreen">
-    </a>
-    <a href="https://huggingface.co/datasets/UTMath/UTMath">
-        <img alt="Static Badge" src="https://img.shields.io/badge/🤗HFDataset UTMath-yellow">
-    </a>
-    <a href="https://huggingface.co/datasets/UTMath/UTMath_Train">
-        <img alt="Static Badge" src="https://img.shields.io/badge/🤗HFDataset UTMath_Train-yellow">
-    </a>
-    <a href="https://utmathhomepage.github.io/">
-        <img alt="Static Badge" src="https://img.shields.io/badge/🚀Home Page-blue">
-    </a> 
-</p>
-
-
 ## 📄 UTMath
 *UTMath: Math Evaluation with **Unit Test** via Reasoning-to-Coding Thoughts*
 
@@ -64,16 +44,6 @@ For example, after setting up the OpenAI API, you can use the following Python c
 python get_rcot_response.py --problem_path=data/utmath_problem.jsonl --save_path=data/sample_exapmle/gpt-4o_test.jsonl --model_name=gpt-4o-2024-08-06
 ```
 
-## 💬 Citation
-If you find our work interesting and meaningful, welcome to give a 🌟 to our repo and cite our paper.
-```
-@article{yang2024utmath,
-  title={UTMath: Math Evaluation with Unit Test via Reasoning-to-Coding Thoughts},
-  author={Yang, Bo and Yang, Qingping and Liu, Runtao},
-  journal={arXiv preprint arXiv:2411.07240},
-  year={2024}
-}
-```
 
 ## 🥇 Leaderboard
 - The best model, GPT-4o, only solves 26.93\% problem in our benchmark, demonstrate the difficulty of our benchmarks.
